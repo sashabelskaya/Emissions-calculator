@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Emissions Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="carbon-calculator">
+        <h2>Flight Emissions Calculator</h2>
+        <label for="distance">Flight Distance (km):</label>
+        <input type="number" id="distance" placeholder="Enter flight distance (km)" required><br><br>
+
+        <label for="class">Flight Class:</label>
+        <select id="class">
+            <option value="economy">Economy</option>
+            <option value="premium-economy">Premium Economy</option>
+            <option value="business">Business Class</option>
+            <option value="first-class">First Class</option>
+        </select><br><br>
+
+        <button id="calculateBtn">Calculate Emissions</button>
+
+        <h3 id="result"></h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
